@@ -50,6 +50,21 @@
           echo 'I give up.';
       } // and replace this curly brace with endswitch; for better readability
       // end of switch statement
+
+      // another practice switch statement since the internet is down
+      switch ($number):
+        case 137:
+        case 73:
+        case 3:
+          echo $number . 'is your number!';
+          break;
+        case 37:
+          echo 'Calling number ' . $number . '. Number ' . $number . ' please pick up.';
+          break;
+        default:
+          echo 'Boo.';
+        endswitch;
+      // end of 2nd practice switch statement using the form w/out curly brackets
       ?>
     </p>
   </body>
