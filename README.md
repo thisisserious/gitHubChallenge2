@@ -9,6 +9,7 @@ This is the beginning of my files for the daily GitHub Challenge, which started 
 - 1 book to read from [DevFreeBooks](https://devfreebooks.github.io/php/):
     - *PHP The Right Way*
 - Blog daily
+    - download book to laptop so I have learning resources when internet is down! And, find another book.
 
 # Author
 - Laura Abend
