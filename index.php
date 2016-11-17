@@ -59,12 +59,24 @@
           echo $number . 'is your number!';
           break;
         case 37:
-          echo 'Calling number ' . $number . '. Number ' . $number . ' please pick up.';
+          echo 'Calling number ' . $number . '. Number ' . $number . ', please pick up.';
           break;
         default:
           echo 'Boo.';
         endswitch;
       // end of 2nd practice switch statement using the form w/out curly brackets
+
+      // php -S localhost:8000 <-- my new best friend; terminal line, built-in server for PHP
+
+      // arrays
+      $threeStooges = array("Moe", "Curly", "Larry", "Schemp");
+      unset($threeStooges[3]); // can delete the whole array or a specific index
+
+      foreach($threeStooges as $stooges) {
+        print "<p>$stooges</p>";
+      }
+      // end of arrays
+      
       ?>
     </p>
   </body>
