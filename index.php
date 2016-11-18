@@ -9,19 +9,19 @@
       <?php
 
       // testing it out
-      echo 'My first line of PHP!';
+      echo '<p>My first line of PHP!</p>';
 
       // if else statements
       $items = 97;
       if($items > 5) {
-        echo 'You get a 10% discount!';
+        echo '<p>You get a 10% discount!</p>';
       } else {
-        echo 'You get a 5% discount.';
+        echo '<p>You get a 5% discount.</p>';
       }
       $name = 'Lambert';
       $demeanor = 'the sheepish lion';
       if($name != $demeanor) {
-        echo $name . ', ' . $demeanor . '.';
+        echo "<p>$name, $demeanor!</p>";
       } else {
         echo 'boo.';
       }
@@ -31,7 +31,7 @@
 
       switch ($number) { // can also use a colon after closing parens instead of curly brace
         case 30:
-          echo '$number is ' . $number;
+          echo '<p>$number is $number</p>';
           break;
         case 31:
         case 32:
@@ -40,7 +40,7 @@
         case 35:
         case 36:
         case 37:
-          echo '$number is between 31 and ' . $number;
+          echo "<p>\$number is between 31 and $number.</p>";
           break;
         case 38:
         case 39:
@@ -68,15 +68,22 @@
 
       // php -S localhost:8000 <-- my new best friend; terminal line, built-in server for PHP
 
-      // arrays
-      $threeStooges = array("Moe", "Curly", "Larry", "Schemp");
+      // arrays & foreach loop
+      $threeStooges = array("Moe", "Curly", "Larry", "Shemp");
       unset($threeStooges[3]); // can delete the whole array or a specific index
 
       foreach($threeStooges as $stooges) {
         print "<p>$stooges</p>";
       }
       // end of arrays
-      
+
+      // for loop
+      for ($index = 0; $index <= 100; $index = $index + 10) {
+        echo "<li>$index</li>";
+      }
+      // end of for loop
+
+
       ?>
     </p>
   </body>
