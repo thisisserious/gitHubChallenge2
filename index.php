@@ -59,7 +59,7 @@
           echo $number . 'is your number!';
           break;
         case 37:
-          echo 'Calling number ' . $number . '. Number ' . $number . ', please pick up.';
+          echo "<p>Calling number {$number}. Number {$number}, please pick up.</p>"; // an efficient way to include $vars in a string; note: need double quotes
           break;
         default:
           echo 'Boo.';
@@ -83,6 +83,20 @@
       }
       // end of for loop
 
+      // while loop
+      $anotherNumber = 87;
+      while($anotherNumber <= 103): // alternate to curly braces
+        $anotherNumber = $anotherNumber + 2;
+        echo "<p>$anotherNumber</p>";
+      endwhile; // alternative way to write 'while' loop, uing colon at the start and 'endwhile' to...end the while loop
+
+      // do while loop
+      $newNumber = 50;
+      do {
+        $newNumber = $newNumber - 5;
+        echo "<p>{$newNumber}</p>";
+      } while ($newNumber > 0);
+      // end of while & do while loops
 
       ?>
     </p>
