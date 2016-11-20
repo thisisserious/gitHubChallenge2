@@ -98,6 +98,40 @@
       } while ($newNumber > 0);
       // end of while & do while loops
 
+      // arrays & functions
+      $the_array = array(35, 21, 333, 57, 93);
+      sort($the_array);
+      // print join(', ', $the_array);
+      rsort($the_array);
+      // print join(', ', $the_array);
+
+      $family = array();
+      array_push($family, "Josh");
+      array_push($family, "Arthur Jr.");
+      array_push($family, "Cathy");
+      array_push($family, "Michelle");
+      array_push($family, "Elizabeth");
+      array_push($family, "Arthur III");
+      array_push($family, "John");
+      array_push($family, "Ruth");
+
+      $count = count($family) - 1;
+
+      // Sort the array
+      sort($family);
+      // print join(', ', $family);
+
+      // Randomly select a winner
+      $random = rand(0, $count);
+      $winner = strtoupper($family[$random]);
+      $winnerLowercase = strtolower($family[$random]);
+
+      // Print the winner's name in ALL CAPS
+      print "<p>The winner is {$winner}!</p>";
+      // Print the winner's name in lowercase
+      print "<p>The winner is {$winnerLowercase}!</p>";
+      // end of arrays & functions
+
       ?>
     </p>
   </body>
