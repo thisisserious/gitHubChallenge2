@@ -98,7 +98,7 @@
       } while ($newNumber > 0);
       // end of while & do while loops
 
-      // arrays & functions
+      // arrays & built-in functions
       $the_array = array(35, 21, 333, 57, 93);
       sort($the_array);
       // print join(', ', $the_array);
@@ -130,8 +130,36 @@
       print "<p>The winner is {$winner}!</p>";
       // Print the winner's name in lowercase
       print "<p>The winner is {$winnerLowercase}!</p>";
-      // end of arrays & functions
+      // end of arrays & built-in functions
 
+      // user-defined function
+      function stooge($threeStooges) {
+        print "<p>{$threeStooges[1]}</p>";
+      }
+
+      stooge($threeStooges);
+
+      // objects, properties, methods
+      class Person {
+           public $isAlive = true;
+           public $firstname;
+           public $lastname;
+           public $age;
+           public  function __construct($firstname, $lastname, $age) {
+               $this->firstname = $firstname;
+               $this->lastname = $lastname;
+               $this->age = $age;
+           }
+           public function greet() {
+               return "<p>Hello, my name is " . $this->firstname . " " . $this->lastname . ". Nice to meet you!</p>";
+           }
+       }
+
+       $teacher = new Person("Samwise", "Gamgee", 57);
+       $student = new Person("Bob", "Hope", 100);
+
+       echo $teacher->greet();
+       echo $student->greet();
       ?>
     </p>
   </body>
