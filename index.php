@@ -139,13 +139,13 @@
 
       stooge($threeStooges);
 
-      // objects, properties, methods
+      // objects, properties, methods <- OOP
       class Person {
            public $isAlive = true;
            public $firstname;
            public $lastname;
            public $age;
-           public  function __construct($firstname, $lastname, $age) {
+           public function __construct($firstname, $lastname, $age) {
                $this->firstname = $firstname;
                $this->lastname = $lastname;
                $this->age = $age;
@@ -160,6 +160,13 @@
 
        echo $teacher->greet();
        echo $student->greet();
+
+      //  Object-oriented programming (OOP):
+          // - class, object <-- create objects using classes
+          // add properties to a class
+          // add methods to a class
+          // __construct method and 'new' keyword
+          // arrow notation
       ?>
     </p>
   </body>
