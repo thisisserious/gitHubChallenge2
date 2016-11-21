@@ -167,6 +167,41 @@
           // add methods to a class
           // __construct method and 'new' keyword
           // arrow notation
+
+          class Person2 {
+            static public function say() {
+              echo "Here are my thoughts! ";
+            }
+          }
+          class Blogger extends Person2 {
+            const cats = 50;
+          }
+          // scope resolution operator ::
+          Blogger::say();
+          echo Blogger::cats;
+      // end of OOP lesson
+
+      // iterating over associative arrays
+      $ninjaTurtles = array('Michelangelo' => 'orange',
+        'Donatello' => 'purple',
+        'Leonardo' => 'blue',
+        'Raphael' => 'red');
+
+        foreach ($ninjaTurtles as $turtle=>$colored) {
+          echo "<p>{$turtle}'s {$colored} belt!</p>";
+        }
+
+        // To loop through an array containing values only, you can use the for loop.
+        // For an array containing keys and values, you can use the foreach loop.
+
+        $myArray = array("eenie", "meenie", "miney", "moe");
+
+        $length = count($myArray);
+        for($index = 0; $index < $length; $index++) {
+          echo $myArray[$index] . " ";
+        }
+      // end of advanced arrays
+
       ?>
     </p>
   </body>
