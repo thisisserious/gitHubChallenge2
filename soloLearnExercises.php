@@ -6,8 +6,12 @@
   </head>
   <body>
     <?php
-      echo '<h1>Learning PHP</h1>';
-      echo 'Hello world - I am learning PHP using <strong>XAMPP</strong>!';
+      include 'header.php';
+      echo '<p>Hello world - I am learning PHP using <strong>XAMPP</strong> or
+      the command line built-in web server! (depending on the day)</p>';
+      $address = $_SERVER['SCRIPT_NAME'];
+      echo $address;
+      include 'footer.php';
      ?>
   </body>
 </html>
