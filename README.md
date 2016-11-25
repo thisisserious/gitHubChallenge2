@@ -11,7 +11,7 @@ This is the beginning of my files for the daily GitHub Challenge, which started 
 - Check out [awesome-php](https://github.com/ziadoz/awesome-php)
 - 1 book to read from [DevFreeBooks](https://devfreebooks.github.io/php/):
     - *PHP The Right Way*
-- Blog daily
+- Blog regularly
 
 # Author
 - Laura Abend
