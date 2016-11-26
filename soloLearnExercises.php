@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,6 +14,9 @@
       the command line built-in web server! (depending on the day)</p>';
       $address = $_SERVER['SCRIPT_NAME'];
       echo $address;
+      $name = 'Laura';
+      $_SESSION['name'] = $name;
+      echo "<p>Your name is " . $_SESSION['name'] . "!</p>";
       include 'footer.php';
      ?>
   </body>
