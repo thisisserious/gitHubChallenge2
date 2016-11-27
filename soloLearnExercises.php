@@ -10,13 +10,16 @@
   <body>
     <?php
       include 'header.php';
-      echo '<p>Hello world - I am learning PHP using <strong>XAMPP</strong> or
-      the command line built-in web server! (depending on the day)</p>';
-      $address = $_SERVER['SCRIPT_NAME'];
-      echo $address;
-      $name = 'Laura';
+      include 'home.php';
       $_SESSION['name'] = $name;
       echo "<p>Your name is " . $_SESSION['name'] . "!</p>";
+      $myfile = fopen("home.php", "a+");
+      $writeToFile = fopen("home.php", "w");
+      $firstName = "Laura\n";
+      fwrite($writeToFile, $firstName);
+      $lastName = "Abend\n";
+      fwrite($writeToFile, $lastName);
+      fclose($myfile);
       include 'footer.php';
      ?>
   </body>
