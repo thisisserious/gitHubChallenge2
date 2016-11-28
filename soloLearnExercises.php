@@ -20,7 +20,29 @@
       $lastName = "Abend\n";
       fwrite($writeToFile, $lastName);
       fclose($myfile);
-      include 'footer.php';
+      if(isset($_POST['text'])) {
+        $name = $_POST['text'];
+        $handle = fopen('names.php', 'a');
+        fwrite($handle, $name."\n");
+        fclose($handle);
+      }
+      $read = file('names.php'); // the $read variable is an array
+      $count = count($read);
+      $index = 1;
+      foreach ($read as $line) {
+        echo $line;
+        if($index < $count) {
+          echo '| ';
+        }
+        $index++;
+      }
      ?>
+     <form method="post">
+       Name: <input type="text" name="text" />
+       <input type="submit" name="submit" />
+     </form>
+     <?php
+     include 'footer.php';
+      ?>
   </body>
 </html>
