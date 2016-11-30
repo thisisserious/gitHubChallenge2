@@ -7,7 +7,10 @@
   <body>
     <p>
       <?php
-
+      if( ! ini_get('date.timezone') )
+      {
+          date_default_timezone_set('GMT');
+      }
       // testing it out
       echo '<p>My first line of PHP!</p>';
 
@@ -205,7 +208,7 @@
       // time; still needs some tweaking, getting an odd error - may be an outdated function
       $raw = '11. 22. 1968';
       $start = DateTime::createFromFormat('d. m. Y', $raw);
-      echo 'Start date: ' . $start->format('Y-m-d');
+      echo 'Start date: ' . $start->format('m-d-Y');
 
       ?>
     </p>
