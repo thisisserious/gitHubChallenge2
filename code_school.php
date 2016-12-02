@@ -11,4 +11,5 @@ $name = 'Laura Abend';
     <h1><?php echo $name; ?></h1>
     <p><?php echo 'Hello world!'; ?></p>
   </body>
+  <footer><?php include 'footer.php'; ?></footer>
 </html>
