@@ -18,6 +18,7 @@ $learning = array('PHP', 'JavaScript', 'Angular', 'HTML5', 'CSS3');
       <li><?php echo $learning[2]; ?></li>
       <li><?php echo $learning[3]; ?></li>
       <li><?php echo $learning[4]; ?></li>
+      <li>This is the array that prints the above list items: <?php print_r($learning); ?></li>
     </ul>
     <h3>...and so much more!</h3>
   </body>
