@@ -13,11 +13,9 @@ $learning = array('PHP', 'JavaScript', 'Angular', 'HTML5', 'CSS3');
     <p><?php echo 'Hello world!'; ?></p>
     <h3>I am learning:</h3>
     <ul>
-      <li><?php echo $learning[0]; ?></li>
-      <li><?php echo $learning[1]; ?></li>
-      <li><?php echo $learning[2]; ?></li>
-      <li><?php echo $learning[3]; ?></li>
-      <li><?php echo $learning[4]; ?></li>
+      <?php foreach ($learning as $subject) {
+        echo "<li>{$subject}</li>";
+      } ?>
       <li>This is the array that prints the above list items: <?php print_r($learning); ?></li>
     </ul>
     <h3>...and so much more!</h3>
