@@ -1,6 +1,9 @@
 <?php
 $name = 'Laura Abend';
 $learning = array('PHP', 'JavaScript', 'Angular', 'HTML5', 'CSS3');
+array_push($learning, 'Bootstrap');
+array_push($learning, 'Git & GitHub');
+array_push($learning, 'jQuery');
  ?>
 <!DOCTYPE html>
 <html>
