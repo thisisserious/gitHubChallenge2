@@ -10,6 +10,7 @@ array_push($learning, 'jQuery');
   <head>
     <meta charset="utf-8">
     <title>Code School PHP Lessons</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1><?php echo $name; ?></h1>
