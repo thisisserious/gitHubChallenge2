@@ -1,3 +1,14 @@
-h1 {
+main {
+  text-align: center;
+  font-family: Trebuchet, sans-serif;
+}
+
+/*section {
+  border: 1px solid black;
+  width: 150px;
+  margin: 0 auto 0 auto;
+}*/
+
+footer {
   text-align: center;
 }
