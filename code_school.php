@@ -13,16 +13,20 @@ array_push($learning, 'jQuery');
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <main>
     <h1><?php echo $name; ?></h1>
     <p><?php echo 'Hello world!'; ?></p>
+    <section>
     <h3>I am learning:</h3>
     <ul>
       <?php foreach ($learning as $subject) {
-        echo "<li>{$subject}</li>";
+        echo "<p>{$subject}</p>";
       } ?>
-      <li>This is the array that prints the above list items: <?php print_r($learning); ?></li>
+      <!-- <li>This is the array that prints the above list items: <?php print_r($learning); ?></li> -->
     </ul>
     <h3>...and so much more!</h3>
+  </section>
+  </main>
   </body>
   <footer><?php include 'footer.php'; ?></footer>
 </html>
