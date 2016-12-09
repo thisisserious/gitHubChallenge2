@@ -20,7 +20,7 @@ array_push($learning, 'jQuery');
     <h3>I am learning:</h3>
     <ul>
       <?php foreach ($learning as $subject) {
-        echo "<p>{$subject}</p>";
+        echo "<li>{$subject}</li>";
       } ?>
       <!-- <li>This is the array that prints the above list items: <?php print_r($learning); ?></li> -->
     </ul>
