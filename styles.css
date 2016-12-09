@@ -5,11 +5,11 @@ body {
   color: #008b8b;
 }
 
-/*section {
-  border: 1px solid black;
+section {
+  text-align: left;
   width: 150px;
   margin: 0 auto 0 auto;
-}*/
+}
 
 footer {
   text-align: center;
