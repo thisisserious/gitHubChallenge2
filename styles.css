@@ -1,6 +1,8 @@
-main {
+body {
   text-align: center;
   font-family: Trebuchet, sans-serif;
+  background-color: #dfdada;
+  color: #008b8b;
 }
 
 /*section {
@@ -11,4 +13,9 @@ main {
 
 footer {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
