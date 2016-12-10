@@ -19,9 +19,19 @@ array_push($learning, 'jQuery');
     <section>
     <h3>I am learning:</h3>
     <ul>
-      <?php foreach ($learning as $subject) {
+      <?php
+      shuffle ($learning);
+      foreach ($learning as $subject) {
         echo "<li>{$subject}</li>";
-      } ?>
+      }
+      ?>
+      <!-- <?php
+$numbers = range(1, 20);
+shuffle($numbers);
+foreach ($numbers as $number) {
+    echo "$number ";
+}
+?> -->
       <!-- <li>This is the array that prints the above list items: <?php print_r($learning); ?></li> -->
     </ul>
     <h3>...and so much more!</h3>
