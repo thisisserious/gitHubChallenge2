@@ -210,7 +210,15 @@
       $start = DateTime::createFromFormat('d. m. Y', $raw);
       echo 'Start date: ' . $start->format('m-d-Y');
 
+      // shuffle
+      $numbers = range(1, 20);
+      shuffle($numbers);
+      foreach ($numbers as $number) {
+        echo "$number ";
+      }
+      // end of shuffle
       ?>
+
     </p>
   </body>
 </html>
