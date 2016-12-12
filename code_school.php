@@ -4,6 +4,8 @@ $learning = array('PHP', 'JavaScript', 'Angular', 'HTML5', 'CSS3');
 array_push($learning, 'Bootstrap');
 array_push($learning, 'Git & GitHub');
 array_push($learning, 'jQuery');
+$num1 = $_POST["num1"];
+$num2 = $_POST["num2"];
  ?>
 <!DOCTYPE html>
 <html>
@@ -25,16 +27,27 @@ array_push($learning, 'jQuery');
         echo "<li>{$subject}</li>";
       }
       ?>
-      <!-- <?php
-$numbers = range(1, 20);
-shuffle($numbers);
-foreach ($numbers as $number) {
-    echo "$number ";
-}
-?> -->
       <!-- <li>This is the array that prints the above list items: <?php print_r($learning); ?></li> -->
     </ul>
     <h3>...and so much more!</h3>
+  </section>
+  <section>
+    <form method="post">
+      <input type="number" name="num1" />
+      <input type="number" name="num2" />
+      <div><input type="radio" name="add" />Add</div>
+      <input type="submit" name="calculate" />
+      <?php
+      if(isset ($add)) {
+        $sum = $num1 + $num2;
+        echo "<p>$sum</p>";
+      } else {
+        echo "<p>boo.</p>";
+      }
+       ?>
+    </form>
+    <p>1st number: <?php echo $num1; ?></p>
+    <p>2nd number: <?php echo $num2; ?></p>
   </section>
   </main>
   </body>
