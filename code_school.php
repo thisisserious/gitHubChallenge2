@@ -6,6 +6,12 @@ array_push($learning, 'Git & GitHub');
 array_push($learning, 'jQuery');
 $num1 = $_POST["num1"];
 $num2 = $_POST["num2"];
+$add = $_POST["add"];
+$subtract = $_POST["subtract"];
+$multiply = $_POST["multiply"];
+$divide = $_POST["divide"];
+// $mathOperation = $_POST["radio"];
+echo "<h1>$add</h1>";
  ?>
 <!DOCTYPE html>
 <html>
@@ -36,18 +42,35 @@ $num2 = $_POST["num2"];
       <input type="number" name="num1" />
       <input type="number" name="num2" />
       <div><input type="radio" name="add" />Add</div>
+      <div><input type="radio" name="subtract" />Subtract</div>
+      <div><input type="radio" name="multiply" />Multiply</div>
+      <div><input type="radio" name="divide" />Divide</div>
       <input type="submit" name="calculate" />
-      <?php
-      if(isset ($add)) {
-        $sum = $num1 + $num2;
-        echo "<p>$sum</p>";
-      } else {
-        echo "<p>boo.</p>";
-      }
-       ?>
     </form>
     <p>1st number: <?php echo $num1; ?></p>
     <p>2nd number: <?php echo $num2; ?></p>
+    <?php
+    switch($mathOperation):
+      case $add:
+        $sum = $num1 + $num2;
+        echo "<p>$sum</p>";
+        break;
+      case $subtract:
+        $diff = $num1 - $num2;
+        echo "<p>$diff</p>";
+        break;
+      case $multiply:
+        $factor = $num1 * $num2;
+        echo "<p>$factor</p>";
+        break;
+      case $divide:
+        $quotient = $num1 / $num2;
+        echo "<p>$quotient</p>";
+        break;
+      default:
+        echo "<p>None of the above.</p>";
+    endswitch;
+     ?>
   </section>
   </main>
   </body>
