@@ -11,6 +11,15 @@ section {
   margin: 0 auto 0 auto;
 }
 
+h4 {
+  text-align: center;
+}
+
+div {
+  width: auto;
+  text-align: center;
+}
+
 footer {
   text-align: center;
 }
