@@ -11,13 +11,18 @@ section {
   margin: 0 auto 0 auto;
 }
 
-h4 {
+h4, p {
   text-align: center;
+}
+
+input, label {
+  margin-bottom: 15px;
 }
 
 div {
   width: auto;
   text-align: center;
+  display: inline;
 }
 
 footer {

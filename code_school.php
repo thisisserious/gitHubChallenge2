@@ -39,30 +39,28 @@ $mathOperation = $_POST["operator"];
       <label for="value1">Value 1: </label><input type="number" name="num1" />
       <div><input type="radio" name="operator" value="add" />+</div>
       <div><input type="radio" name="operator" value="subtract" />-</div>
-      <div><input type="radio" name="operator" value="multiply" />*</div>
+      <div><input type="radio" name="operator" value="multiply" />x</div>
       <div><input type="radio" name="operator" value="divide" />/</div>
       <label for="value2">Value 2: </label><input type="number" name="num2" />
       <input type="submit" name="calculate" />
     </form>
-    <p>1st number: <?php echo $num1; ?></p>
-    <p>2nd number: <?php echo $num2; ?></p>
     <?php
     switch ($mathOperation):
       case "add":
         $sum = $num1 + $num2;
-        echo "<p>Equals: $sum</p>";
+        echo "<p>$num1 + $num2 = $sum</p>";
         break;
       case "subtract":
         $diff = $num1 - $num2;
-        echo "<p>Equals: $diff</p>";
+        echo "<p>$num1 - $num2 = $diff</p>";
         break;
       case "multiply":
         $factor = $num1 * $num2;
-        echo "<p>Equals: $factor</p>";
+        echo "<p>$num1 x $num2 = $factor</p>";
         break;
       case "divide":
         $quotient = $num1 / $num2;
-        echo "<p>Equals: $quotient</p>";
+        echo "<p>$num1 / $num2 = $quotient</p>";
         break;
       default:
         echo "<p>None of the above.</p>";
