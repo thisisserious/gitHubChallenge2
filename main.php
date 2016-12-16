@@ -103,8 +103,21 @@ $random_num = rand(0, 2);
         echo "<p>$weapon covers $computers_weapon, you win!</p>";
       } elseif($computers_weapon == "rock" && $weapon == "scissors") {
         echo "<p>$computers_weapon smashes $weapon, you lose!</p>";
+      } elseif($computers_weapon == "paper" && $weapon == "paper") {
+        echo "<p>You both chose $weapon, it's a tie!</p>";
+      } elseif($computers_weapon == "paper" && $weapon == "rock") {
+        echo "<p>$computers_weapon covers $weapon, you lose!</p>";
+      } elseif($computers_weapon == "paper" && $weapon == "scissors") {
+        echo "<p>$weapon cuts $computers_weapon, you win!</p>";
+      } elseif($computers_weapon == "scissors" && $weapon == "scissors") {
+        echo "<p>You both chose $weapon, it's a tie!</p>";
+      } elseif($computers_weapon == "scissors" && $weapon == "paper") {
+        echo "<p>$computers_weapon cuts $weapon, you lose!</p>";
+      } elseif($computers_weapon == "scissors" && $weapon == "rock") {
+        echo "<p>$weapon smashes $computers_weapon, you win!</p>";
       } else {
-        echo "<p>Try again!</p>";
+        echo "<p>I didn't quite get that. Please enter weapon using all
+        lowercase: rock, paper, scissors.</p>";
       }
      ?>
     <hr />
