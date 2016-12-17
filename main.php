@@ -8,6 +8,7 @@ $num1 = $_POST["num1"];
 $num2 = $_POST["num2"];
 $mathOperation = $_POST["operator"];
 $weapon = $_POST["weapon"];
+$weapon = strtolower($weapon);
 $random_num = rand(0, 2);
  ?>
 <!DOCTYPE html>
@@ -116,8 +117,7 @@ $random_num = rand(0, 2);
       } elseif($computers_weapon == "scissors" && $weapon == "rock") {
         echo "<p>$weapon smashes $computers_weapon, you win!</p>";
       } else {
-        echo "<p>I didn't quite get that. Please enter weapon using all
-        lowercase: rock, paper, scissors.</p>";
+        echo "<p>Please enter a weapon of choice.</p>";
       }
      ?>
     <hr />
