@@ -12,7 +12,7 @@ This is the beginning of my files for the daily GitHub Challenge, which started 
 - Check out [awesome-php](https://github.com/ziadoz/awesome-php)
 - 1 book to read from [DevFreeBooks](https://devfreebooks.github.io/php/):
     - *PHP The Right Way*
-- Blog regularly
-
+- Start learning [WordPress](https://codex.wordpress.org/)
+    - [WPBeginner](http://www.wpbeginner.com/beginners-guide/how-to-learn-wordpress-for-free-in-a-week-or-less/)
 # Author
 - Laura Abend
