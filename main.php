@@ -23,7 +23,7 @@ $random_num = rand(0, 2);
     <h1><?php echo $name; ?></h1>
     <p><?php echo 'Hello world!'; ?></p>
     <section>
-    <h3>I am learning:</h3>
+    <h3>I am working in:</h3>
     <ul>
       <?php
       shuffle ($learning);
