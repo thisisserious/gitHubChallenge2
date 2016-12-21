@@ -14,5 +14,6 @@ This is the beginning of my files for the daily GitHub Challenge, which started 
     - *PHP The Right Way*
 - Start learning [WordPress](https://codex.wordpress.org/)
     - [WPBeginner](http://www.wpbeginner.com/beginners-guide/how-to-learn-wordpress-for-free-in-a-week-or-less/)
+
 # Author
 - Laura Abend
