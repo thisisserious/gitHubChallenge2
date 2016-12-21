@@ -220,5 +220,22 @@
       ?>
 
     </p>
+    <!-- // fizzbuzz challenge -->
+    <section id="fizzbuzz">
+      <?php
+      for($number = 1; $number <= 100; $number++) {
+        if($number % 3 == 0 && $number % 5 == 0) {
+        echo "<p>FizzBuzz</p>";
+        } elseif($number % 3 == 0) {
+          echo "<p>Fizz</p>";
+        } elseif($number % 5 == 0) {
+          echo "<p>Buzz</p>";
+        } else {
+          echo "<p>$number</p>";
+        }
+      }
+       ?>
+    </section>
+    <!-- end of fizzbuzz challenge -->
   </body>
 </html>
