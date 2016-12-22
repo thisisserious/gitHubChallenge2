@@ -15,7 +15,7 @@ $random_num = rand(0, 2);
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Code School PHP Lessons</title>
+    <title>PHP Practice</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
