@@ -2,6 +2,7 @@
 $tasks = array();
 $newTask = $_POST["task"];
 array_push($tasks, $newTask);
+print_r($tasks);
  ?>
 <!DOCTYPE html>
 <html>
