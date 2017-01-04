@@ -1,14 +1,9 @@
-<?php
-$tasks = array();
-$newTask = $_POST["task"];
-array_push($tasks, $newTask);
-print_r($tasks);
- ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>PHP To Do List</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
@@ -17,13 +12,21 @@ print_r($tasks);
         <label for="task">Add a new task: </label><input type="text" name="task" />
         <input type="submit" name="addTask" />
       </form>
-      <ul>
         <?php
+          if(isset($_POST['task'])) {
+            $new_task = $_POST['task'];
+            $tasks = fopen('tasks.php', 'a');
+            fwrite($tasks, $new_task."\n");
+            fclose($tasks);
+          }
+          $tasks = file('tasks.php');
+          $count_tasks = count($tasks);
+          $index = 1;
           foreach ($tasks as $todo) {
-          echo "<li>$todo</li>";
+          echo "<input type='checkbox' name='task_$index' class='task'/><p>$todo</p>";
+          $index++;
         }
          ?>
-      </ul>
     </main>
   </body>
 </html>
