@@ -15,5 +15,6 @@ These are my files for the daily GitHub Challenge, which started 11/14/16 and en
 - Started learning [WordPress](https://codex.wordpress.org/)
     - [WPBeginner](http://www.wpbeginner.com/beginners-guide/how-to-learn-wordpress-for-free-in-a-week-or-less/)
     - Completed [Lynda.com's](https://www.lynda.com/MyPlaylists?playlistId=10781913) WordPress Essential Training course 1/5/16
+
 # Author
 - Laura Abend
