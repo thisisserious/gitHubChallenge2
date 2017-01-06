@@ -1,6 +1,6 @@
 # GitHub Challenge 2
 
-This is the beginning of my files for the daily GitHub Challenge, which started 11/14/16. I am learning PHP.
+These are my files for the daily GitHub Challenge, which started 11/14/16 and ended 12/14/16. I am learning PHP and WordPress. Completed challenge with 100% daily commits!
 
 ### To Do / Learning materials
 - Completed [codecademy's](https://www.codecademy.com/learn) course 11/20/16
@@ -12,8 +12,8 @@ This is the beginning of my files for the daily GitHub Challenge, which started 
 - Check out [awesome-php](https://github.com/ziadoz/awesome-php)
 - 1 book to read from [DevFreeBooks](https://devfreebooks.github.io/php/):
     - *PHP The Right Way*
-- Start learning [WordPress](https://codex.wordpress.org/)
+- Started learning [WordPress](https://codex.wordpress.org/)
     - [WPBeginner](http://www.wpbeginner.com/beginners-guide/how-to-learn-wordpress-for-free-in-a-week-or-less/)
-
+    - Completed [Lynda.com's](https://www.lynda.com/MyPlaylists?playlistId=10781913) WordPress Essential Training course 1/5/16
 # Author
 - Laura Abend
